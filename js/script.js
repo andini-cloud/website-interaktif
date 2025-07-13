@@ -44,7 +44,40 @@ document.addEventListener('DOMContentLoaded', () => {
             sumberInformasi: {
                 title: "SUMBER INFORMASI",
                 pages: [
-                    "Adapun penelitian ini memiliki beberapa perbedaan dari penelitian terdahulu. Salah satunya adalah fokus pada penyakit berbahaya secara umum, seperti hipertensi dan diabetes, serta penyampaian informasi berbasis web dengan fitur offline yang dapat diakses oleh masyarakat tanpa koneksi internet. Selain itu, penelitian ini juga menggunakan pendekatan lokal untuk mendukung edukasi kesehatan di wilayah tertentu yang belum memiliki sistem serupa sebelumnya."
+                    "<strong>SUMBER INFORMASI RESMI</strong><br><br>" +
+                    "<strong>1. Kementerian Kesehatan Republik Indonesia (Kemenkes RI)</strong><br>" +
+                    "Kemenkes, melalui Direktorat Jenderal Pencegahan dan Pengendalian Penyakit (P2P), menyediakan berbagai materi edukasi dan pedoman resmi mengenai hipertensi di Indonesia.<br><br>" +
+                    "• <strong>Artikel Edukasi Hipertensi:</strong> Halaman ini berisi informasi dasar, data, dan tips pencegahan hipertensi untuk masyarakat umum.<br>" +
+                    "URL: <a href='https://p2ptm.kemkes.go.id/penyakit-tidak-menular/hipertensi-penyakit-jantung-dan-pembuluh-darah' target='_blank'>https://p2ptm.kemkes.go.id/penyakit-tidak-menular/hipertensi-penyakit-jantung-dan-pembuluh-darah</a><br><br>" +
+                    "• <strong>Buku Pedoman Pengendalian Hipertensi (PDF):</strong> Dokumen ini adalah panduan komprehensif yang digunakan oleh tenaga kesehatan di Indonesia.<br>" +
+                    "URL: <a href='https://p2ptm.kemkes.go.id/uploads/VHcrbkVobjRzU2VIaUpvZW9iMکل/10.pdf' target='_blank'>https://p2ptm.kemkes.go.id/uploads/VHcrbkVobjRzU2VIaUpvZW9iMکل/10.pdf</a>",
+
+                    "<strong>2. World Health Organization (WHO)</strong><br>" +
+                    "WHO adalah badan kesehatan dunia yang menyediakan data global, lembar fakta, dan rekomendasi internasional mengenai hipertensi.<br><br>" +
+                    "• <strong>Lembar Fakta Hipertensi (Global):</strong> Halaman ini merangkum semua informasi penting tentang hipertensi secara global, termasuk statistik, faktor risiko, dan strategi penanganan WHO.<br>" +
+                    "URL: <a href='https://www.who.int/news-room/fact-sheets/detail/hypertension' target='_blank'>https://www.who.int/news-room/fact-sheets/detail/hypertension</a><br><br>" +
+                    "• <strong>Laporan Global tentang Hipertensi (2023):</strong> Laporan mendalam pertama dari WHO mengenai dampak hipertensi secara global beserta rekomendasi untuk setiap negara.<br>" +
+                    "URL: <a href='https://www.who.int/publications/i/item/9789240079435' target='_blank'>https://www.who.int/publications/i/item/9789240079435</a>",
+
+                    "<strong>3. Perhimpunan Dokter Hipertensi Indonesia (PERHI / InaSH)</strong><br>" +
+                    "PERHI atau Indonesian Society of Hypertension (InaSH) adalah organisasi profesi dokter di Indonesia yang berfokus pada hipertensi. Mereka mengeluarkan pedoman klinis yang menjadi acuan utama bagi dokter di Indonesia.<br><br>" +
+                    "• <strong>Konsensus Penatalaksanaan Hipertensi 2019 (PDF):</strong> Ini adalah panduan klinis yang digunakan oleh dokter di seluruh Indonesia untuk mendiagnosis dan mengobati hipertensi.<br>" +
+                    "URL: <a href='https://www.inash.or.id/wp-content/uploads/2019/12/Konsensus-Hipertensi-2019.pdf' target='_blank'>https://www.inash.or.id/wp-content/uploads/2019/12/Konsensus-Hipertensi-2019.pdf</a><br><br>" +
+                    "<strong>4. American Heart Association (AHA)</strong><br>" +
+                    "AHA adalah organisasi nirlaba di Amerika Serikat yang menjadi salah satu rujukan utama dunia untuk kesehatan jantung dan pembuluh darah.<br><br>" +
+                    "• <strong>Informasi Umum tentang Tekanan Darah Tinggi:</strong> Halaman ini menjelaskan secara detail apa itu tekanan darah tinggi, gejalanya, dan cara mengelolanya, ditujukan untuk publik.<br>" +
+                    "URL: <a href='https://www.heart.org/en/health-topics/high-blood-pressure' target='_blank'>https://www.heart.org/en/health-topics/high-blood-pressure</a>",
+
+                    "<strong>SUMBER INFORMASI TAMBAHAN</strong><br><br>" +
+                    "<strong>5. Referensi Akademik Diabetes Melitus:</strong><br>" +
+                    "Dokumen akademik yang membahas tentang diabetes melitus dari perspektif penelitian dan pendidikan kesehatan.<br>" +
+                    "URL: <a href='https://eprints.poltekkesjogja.ac.id/1352/4/Chapter2.pdf' target='_blank'>Politekkes Jogja - Chapter 2 PDF</a><br><br>" +
+                    "<strong>6. Artikel Diabetes Melitus - RS Elizabeth:</strong><br>" +
+                    "Artikel komprehensif tentang pengertian, gejala, penyebab, dan pengelolaan diabetes melitus.<br>" +
+                    "URL: <a href='https://rselizabeth.ihc.id/artikel-detail-796-Diabetes-Melitus-Pengertian-Gejala-Penyebab-dan-Pengelolaan.html' target='_blank'>RS Elizabeth - Diabetes Melitus</a><br><br>" +
+                    "<strong>7. Portal Ayo Sehat Kemenkes - Diabetes Tipe 2:</strong><br>" +
+                    "Informasi resmi dari Kementerian Kesehatan tentang diabetes melitus tipe 2 dan penyakit ginjal.<br>" +
+                    "URL: <a href='https://ayosehat.kemkes.go.id/topik-penyakit/diabetes--penyakit-ginjal/diabetes-melitus-tipe-2' target='_blank'>Ayo Sehat Kemenkes - DM Tipe 2</a>"
                 ],
                 video: null
             },
