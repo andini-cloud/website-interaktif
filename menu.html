@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Utama - Kenali & Cegah Hipertensi dan Diabetes</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS Lokal -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Bootstrap Icons (Untuk ikon navigasi) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Elemen Audio Latar Belakang -->
+  <audio id="background-music" src="audio/background-music.mp3" loop></audio>
+  <!-- CSS Kustom kita -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+</head>
+
+<body class="page-background">
+  <div class="page-wrapper">
+    <!-- Header Biru (Bagian Atas) -->
+    <header class="main-header">
+      <div class="container">
+        <!-- Navigasi Atas -->
+        <nav class="top-nav">
+          <a href="menu.html" class="nav-icon icon-link icon-link-hover"
+            style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"><i class="bi bi-house-fill"></i></a>
+          <div class="nav-icon-group">
+            <a href="#" id="volume-toggle-btn" class="nav-icon icon-link icon-link-hover"
+              style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"><i id="volume-icon"
+                class="bi bi-volume-mute-fill"></i></a>
+            <a href="profil.html" class="nav-icon icon-link icon-link-hover"
+              style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"><i class="bi bi-person-circle"></i></a>
+            <a href="index.html" class="nav-icon icon-link icon-link-hover"
+              style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"><i class="bi bi-box-arrow-right"></i></a>
+          </div>
+        </nav>
+
+        <!-- Ilustrasi Dokter -->
+        <div class="illustration-container animate__animated animate__fadeInUp">
+          <!-- Ganti 'src' dengan path ilustrasi Anda -->
+          <dotlottie-wc src="https://lottie.host/8109e071-f011-4c2a-a683-d219513e7a6e/V40I1RRjCV.json"
+            background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-wc>
+        </div>
+
+        <!-- Kotak Judul -->
+        <div class="header-title-box animate__animated animate__fadeInUp">
+          <h1 class="h6">KENALI DAN CEGAH HIPERTENSI DAN DIABETES</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten Utama (Kartu Putih) -->
+    <main class="main-content-card animate__animated animate__fadeInUp">
+      <div class="container">
+        <div class="row g-3 g-sm-4 text-center">
+          <div id="welcome-message-container" class="text-center text-black mt-3">
+            <!-- Pesan akan diisi oleh JavaScript -->
+          </div>
+          <!-- PERUBAHAN: href di setiap tombol diubah -->
+          <div class="col-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="konten.html?topic=pengenalanHipertensi" class="menu-button">
+              <div class="menu-icon-box">
+                <img src="img/pengenalan-hipertensi.png" alt="Ikon" />
+              </div>
+              <p class="menu-label">Pengenalan Hipertensi</p>
+            </a>
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="konten.html?topic=pengenalanDiabetes" class="menu-button">
+              <div class="menu-icon-box">
+                <img src="img/pengenalan-diabetes.png" alt="Ikon" />
+              </div>
+              <p class="menu-label">Pengenalan Diabetes</p>
+            </a>
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="konten.html?topic=pencegahanHipertensi" class="menu-button">
+              <div class="menu-icon-box">
+                <img src="img/pencegahan-hipertensi.png" alt="Ikon" />
+              </div>
+              <p class="menu-label">Pencegahan Hipertensi</p>
+            </a>
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="konten.html?topic=pencegahanDiabetes" class="menu-button">
+              <div class="menu-icon-box">
+                <img src="img/pencegahan-diabetes.png" alt="Ikon" />
+              </div>
+              <p class="menu-label">Pencegahan Diabetes</p>
+            </a>
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="konten.html?topic=animasiHipertensiDiabetes" class="menu-button">
+              <div class="menu-icon-box">
+                <img src="img/animasi.png" alt="Ikon" />
+              </div>
+              <p class="menu-label">Animasi Hipertensi & Diabetes</p>
+            </a>
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="kuis.html" class="menu-button">
+              <div class="menu-icon-box">
+                <img src="img/quis.png" alt="Ikon" />
+              </div>
+              <p class="menu-label">Kuis</p>
+            </a>
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="konten.html?topic=sumberInformasi" class="menu-button">
+              <div class="menu-icon-box">
+                <img src="img/sumber-informasi.png" alt="Ikon" />
+              </div>
+              <p class="menu-label">Sumber Informasi</p>
+            </a>
+          </div>
+          <div class="col-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="https://forms.gle/R6a9EqYCvMFhunV37" class="menu-button">
+              <div class="menu-icon-box">
+                <img src="img/feedback.png" alt="Ikon" />
+              </div>
+              <p class="menu-label">Berikan Ulasan</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Bootstrap JS Lokal -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript Kustom kita -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

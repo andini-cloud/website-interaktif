@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Penulis - Kenali & Cegah Hipertensi dan Diabetes</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS Lokal -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Elemen Audio Latar Belakang -->
+  <audio id="background-music" src="audio/background-music.mp3" loop></audio>
+  <!-- CSS Kustom kita -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+</head>
+
+<body class="page-background">
+  <div class="page-wrapper">
+    <header class="main-header">
+      <div class="container">
+        <nav class="top-nav">
+          <a href="menu.html" class="nav-icon"><i class="bi bi-arrow-left"></i></a>
+          <div class="nav-icon-group">
+            <a href="#" id="volume-toggle-btn" class="nav-icon icon-link icon-link-hover"
+              style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"><i id="volume-icon"
+                class="bi bi-volume-mute-fill"></i></a>
+            <a href="profil.html" class="nav-icon icon-link icon-link-hover"
+              style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"><i class="bi bi-person-circle"></i></a>
+            <a href="index.html" class="nav-icon icon-link icon-link-hover"
+              style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"><i class="bi bi-box-arrow-right"></i></a>
+          </div>
+        </nav>
+        <div class="illustration-container animate__animated animate__fadeInUp">
+          <dotlottie-wc src="https://lottie.host/8109e071-f011-4c2a-a683-d219513e7a6e/V40I1RRjCV.json"
+            background="transparent" speed="1" style="width: 250px; height: 250px" loop autoplay></dotlottie-wc>
+        </div>
+        <div class="header-title-box animate__animated animate__fadeInUp">
+          <h1 class="h6">PROFIL PENULIS</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content-card with-footer-nav animate__animated animate__fadeInUp">
+      <div class="container content-body">
+        <!-- Halaman 1: Profil Penulis (Mahasiswa) -->
+        <div id="author-profile" class="profile-page">
+          <img src="img/andini.JPG" class="profile-picture" alt="Foto Profil Penulis" />
+          <div class="profile-details mt-4">
+            <p><strong>Nama</strong> : Andini Pramodya Wijaya</p>
+            <p><strong>NIM</strong> : 210030553</p>
+            <p><strong>Prodi</strong> : Sistem Informasi</p>
+            <p><strong>Email</strong> : 210030553@stikom-bali.ac.id</p>
+          </div>
+        </div>
+
+        <!-- Halaman 2: Profil Dosen Pembimbing (Awalnya disembunyikan) -->
+        <div id="lecturer-profile" class="profile-page hidden">
+          <div class="row g-4">
+            <div class="col-6 text-center">
+              <p class="lecturer-title">Dosen Pembimbing I</p>
+              <img src="https://placehold.co/120x120/cccccc/333?text=Foto+Dosen" class="lecturer-picture"
+                alt="Foto Dosen Pembimbing 1" />
+              <p class="lecturer-name mt-2">
+                I Gusti Ngurah Wikranta Arsa, S.Kom., M.Cs
+              </p>
+            </div>
+            <div class="col-6 text-center">
+              <p class="lecturer-title">Dosen Pembimbing II</p>
+              <img src="https://placehold.co/120x120/cccccc/333?text=Foto+Dosen" class="lecturer-picture"
+                alt="Foto Dosen Pembimbing 2" />
+              <p class="lecturer-name mt-2">
+                A.A Ayu Meitridwiastiti, S.S., M.Hum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="content-nav">
+        <div class="container d-flex justify-content-between">
+          <a href="#" id="profile-btn-back" class="btn btn-nav-content invisible">
+            <i class="bi bi-arrow-left-circle"></i> BACK
+          </a>
+          <a href="#" id="profile-btn-next" class="btn btn-nav-content">
+            NEXT <i class="bi bi-arrow-right-circle"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
