@@ -232,35 +232,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // =================================================
     const quizContainer = document.getElementById('quiz-container');
     if (quizContainer) {
-        const quizQuestions = [
-            {
-                question: "Berdasarkan video, dalam slogan pencegahan hipertensi 'CERDIK', huruf 'R' merupakan singkatan dari...",
-                answers: ["Rawat inap rutin", "Rileks dan santai", "Rajin aktivitas fisik"],
-                correctAnswerIndex: 2
-            },
-            {
-                question: "Menurut data yang ditampilkan dalam video, berapa persentase penderita yang tidak menyadari dirinya mengidap Diabetes Melitus?",
-                answers: ["34,11%", "Sekitar 75%", "90%"],
-                correctAnswerIndex: 1
-            },
-            {
-                question: "Video tersebut menyebutkan beberapa komplikasi serius. Manakah komplikasi yang disebutkan untuk kedua penyakit (hipertensi dan diabetes)?",
-                answers: ["Amputasi", "Kerusakan Ginjal", "Aneurisma"],
-                correctAnswerIndex: 1
-            },
-            {
-                question: "Sesuai penjelasan di video, bagaimana tekanan darah seseorang bisa dikategorikan sebagai hipertensi?",
-                answers: ["Gula darahnya tinggi", "Sistolik ≥ 140 atau Diastolik ≥ 90", "Selalu merasa pusing"],
-                correctAnswerIndex: 1
-            },
-            {
-                question: "Dalam slogan 'PATUH' untuk mengendalikan hipertensi, apa arti dari huruf 'A'?",
-                answers: ["Awasi asupan garam", "Atasi dengan pengobatan teratur", "Aktivitas fisik dianjurkan"],
-                correctAnswerIndex: 1
-            }
+        // PERUBAHAN: Bank soal sekarang berisi 20 pertanyaan
+        const questionBank = [
+            // 5 Soal Asli
+            { question: "Berdasarkan video, dalam slogan pencegahan hipertensi 'CERDIK', huruf 'R' merupakan singkatan dari...", answers: ["Rawat inap rutin", "Rileks dan santai", "Rajin aktivitas fisik"], correctAnswerIndex: 2 },
+            { question: "Menurut data yang ditampilkan dalam video, berapa persentase penderita yang tidak menyadari dirinya mengidap Diabetes Melitus?", answers: ["34,11%", "Sekitar 75%", "90%"], correctAnswerIndex: 1 },
+            { question: "Video tersebut menyebutkan beberapa komplikasi serius. Manakah komplikasi yang disebutkan untuk kedua penyakit (hipertensi dan diabetes)?", answers: ["Amputasi", "Kerusakan Ginjal", "Aneurisma"], correctAnswerIndex: 1 },
+            { question: "Sesuai penjelasan di video, bagaimana tekanan darah seseorang bisa dikategorikan sebagai hipertensi?", answers: ["Gula darahnya tinggi", "Sistolik ≥ 140 atau Diastolik ≥ 90", "Selalu merasa pusing"], correctAnswerIndex: 1 },
+            { question: "Dalam slogan 'PATUH' untuk mengendalikan hipertensi, apa arti dari huruf 'A'?", answers: ["Awasi asupan garam", "Atasi dengan pengobatan teratur", "Aktivitas fisik dianjurkan"], correctAnswerIndex: 1 },
+            
+            // 15 Soal Tambahan (Contoh)
+            { question: "Manakah di antara berikut ini yang merupakan faktor risiko utama untuk diabetes tipe 2?", answers: ["Terlalu banyak minum air", "Kurang tidur", "Obesitas dan gaya hidup tidak aktif"], correctAnswerIndex: 2 },
+            { question: "Apa nama lain dari 'tekanan darah tinggi'?", answers: ["Hipotensi", "Hipertensi", "Anemia"], correctAnswerIndex: 1 },
+            { question: "Berapa batas asupan garam harian yang dianjurkan untuk penderita hipertensi?", answers: ["1 sendok makan", "Tidak ada batas", "Kurang dari 1 sendok teh"], correctAnswerIndex: 2 },
+            { question: "Hormon apa yang berfungsi mengatur kadar gula dalam darah?", answers: ["Insulin", "Adrenalin", "Testosteron"], correctAnswerIndex: 0 },
+            { question: "Dalam slogan 'CERDIK', huruf 'E' berarti...", answers: ["Enyahkan asap rokok", "Edukasi kesehatan", "Energi yang cukup"], correctAnswerIndex: 0 },
+            { question: "Komplikasi diabetes yang dapat menyebabkan kebutaan disebut...", answers: ["Nefropati diabetik", "Neuropati diabetik", "Retinopati diabetik"], correctAnswerIndex: 2 },
+            { question: "Aktivitas fisik yang dianjurkan untuk penderita hipertensi adalah selama...", answers: ["5 menit setiap hari", "30 menit, 3-5 kali seminggu", "2 jam setiap akhir pekan"], correctAnswerIndex: 1 },
+            { question: "Manakah makanan yang sebaiknya dihindari oleh penderita diabetes?", answers: ["Sayuran hijau", "Buah-buahan segar", "Minuman manis dan kue"], correctAnswerIndex: 2 },
+            { question: "Apa yang dimaksud dengan tekanan darah 'Sistolik'?", answers: ["Tekanan saat jantung beristirahat", "Tekanan saat jantung memompa darah", "Rata-rata tekanan darah"], correctAnswerIndex: 1 },
+            { question: "Dalam slogan 'PATUH', huruf 'H' berarti...", answers: ["Hindari stres", "Hadapi dengan senyuman", "Hubungi dokter segera"], correctAnswerIndex: 0 },
+            { question: "Pemeriksaan gula darah yang umum dilakukan setelah berpuasa selama 8 jam adalah...", answers: ["Tes Gula Darah Puasa", "Tes Gula Darah Sewaktu", "Tes HbA1c"], correctAnswerIndex: 0 },
+            { question: "Manakah yang BUKAN merupakan gejala klasik diabetes?", answers: ["Sering haus (polidipsi)", "Sering buang air kecil (poliuri)", "Sering merasa kenyang"], correctAnswerIndex: 2 },
+            { question: "Mengapa hipertensi dijuluki 'The Silent Killer'?", answers: ["Karena suaranya pelan", "Karena seringkali tidak menunjukkan gejala", "Karena hanya menyerang di malam hari"], correctAnswerIndex: 1 },
+            { question: "Indeks Glikemik (IG) adalah ukuran yang digunakan untuk...", answers: ["Mengukur tekanan darah", "Mengukur seberapa cepat makanan meningkatkan gula darah", "Mengukur detak jantung"], correctAnswerIndex: 1 },
+            { question: "Dalam slogan 'CERDIK', huruf 'K' berarti...", answers: ["Kendalikan penyakit penyerta", "Kelola stres", "Kalori seimbang"], correctAnswerIndex: 2 }
         ];
 
-        let shuffledQuestions = [];
+        let questionsForThisQuiz = [];
         let currentQuestionIndex = 0;
         let score = 0;
         let userAnswers = [];
@@ -284,7 +283,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function startQuiz() {
-            shuffledQuestions = shuffleArray(quizQuestions);
+            // PERUBAHAN: Acak seluruh bank soal, lalu ambil 5 soal pertama
+            const shuffledBank = shuffleArray(questionBank);
+            questionsForThisQuiz = shuffledBank.slice(0, 5);
+
             currentQuestionIndex = 0;
             score = 0;
             userAnswers = [];
@@ -296,8 +298,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function showQuestion() {
             resetState();
-            const currentQuestion = shuffledQuestions[currentQuestionIndex];
-            questionNumberText.innerText = `Soal ${currentQuestionIndex + 1} dari ${shuffledQuestions.length}`;
+            const currentQuestion = questionsForThisQuiz[currentQuestionIndex];
+            questionNumberText.innerText = `Soal ${currentQuestionIndex + 1} dari ${questionsForThisQuiz.length}`;
             questionText.innerText = currentQuestion.question;
 
             currentQuestion.answers.forEach((answer, index) => {
@@ -320,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
         function selectAnswer(e) {
             const selectedButton = e.target;
             const selectedAnswerIndex = parseInt(selectedButton.dataset.index);
-            const correct = selectedAnswerIndex === shuffledQuestions[currentQuestionIndex].correctAnswerIndex;
+            const correct = selectedAnswerIndex === questionsForThisQuiz[currentQuestionIndex].correctAnswerIndex;
             
             userAnswers.push(selectedAnswerIndex);
 
@@ -332,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             Array.from(answerButtonsContainer.children).forEach(button => {
-                if (parseInt(button.dataset.index) === shuffledQuestions[currentQuestionIndex].correctAnswerIndex) {
+                if (parseInt(button.dataset.index) === questionsForThisQuiz[currentQuestionIndex].correctAnswerIndex) {
                     button.classList.add('correct');
                 }
                 button.disabled = true;
@@ -346,11 +348,11 @@ document.addEventListener('DOMContentLoaded', () => {
             resultsContainer.classList.remove('hidden');
 
             const correctAnswers = score;
-            const incorrectAnswers = shuffledQuestions.length - score;
+            const incorrectAnswers = questionsForThisQuiz.length - score;
             scoreSummaryText.innerText = `Benar: ${correctAnswers}, Salah: ${incorrectAnswers}`;
 
-            reviewContainer.innerHTML = ''; // Kosongkan ulasan sebelumnya
-            shuffledQuestions.forEach((question, index) => {
+            reviewContainer.innerHTML = ''; 
+            questionsForThisQuiz.forEach((question, index) => {
                 const reviewCard = document.createElement('div');
                 reviewCard.classList.add('review-card');
 
@@ -377,7 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         nextQuestionBtn.addEventListener('click', () => {
             currentQuestionIndex++;
-            if (currentQuestionIndex < shuffledQuestions.length) {
+            if (currentQuestionIndex < questionsForThisQuiz.length) {
                 showQuestion();
             } else {
                 showResults();
